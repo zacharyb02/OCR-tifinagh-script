@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Form</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='iskawatccaaaaade3453443.png') }}" type="image/x-icon">
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/styles.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="/static/iskawatccaaaaade3453443.png" alt="logo isima" class="logo">
+        <div class="frame1">
+                <h2>Projet ZZ2</h2>
+                <h1>Developpement d'un OCR <br>Pour l'alphabet Tifinagh</h1>
+        </div>
+        <div class="nav">
+        
+            <div class="element1">
+                <a href="/about">
+                    <button class="btn">
+                        <div>À propos</div>
+                        <svg fill="none" viewBox="0 0 24 24" height="25px" width="25px" xmlns="http://www.w3.org/2000/svg">
+                      <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke="black" d="M11.6801 14.62L14.2401 12.06L11.6801 9.5"></path>
+                      <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke="black" d="M4 12.0601H14.17"></path>
+                      <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke="black" d="M12 4C16.42 4 20 7 20 12C20 17 16.42 20 12 20"></path>
+                      </svg>
+                      </button>
+                </a>
+                
+            </div>
+            
+        </div>
+    </header>
+    <div class="container">
+        <h1>Upload a Photo for OCR</h1>
+        <form id="predictionForm" action="/predict" method="POST" enctype="multipart/form-data">
+            <label for="imagefile">Uploader une photo</label>
+            <input type="file" id="imagefile" name="imagefile" accept="image/*" required>
+            <button class="button" type="submit">Upload</button>
+        </form>
+        <div id="predictionResult">
+            {% if prediction is not none %}
+                <h2>OCR Result:</h2>
+                <p>{{ prediction }}</p>
+            {% endif %}
+        </div>
+    </div>
+    </div>
+</body>
+</html>
