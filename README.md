@@ -145,9 +145,6 @@ Contributions are welcome! Please feel free to submit a Pull Request. For major 
 
 ## 📧 Contact
 
-**Zakaria Baou**
-- GitHub: [@zacharyb02](https://github.com/zacharyb02)
-**Mohammed Aoukicha**
-- GitHub: [@mohaaoukicha-lgtm](https://github.com/mohaaoukicha-lgtm)
-**Mohammed Taleb**
-- GitHub: [@MOHAMMEDTALEB20](https://github.com/MOHAMMEDTALEB20)
+**Zakaria Baou** GitHub: [@zacharyb02](https://github.com/zacharyb02)
+**Mohammed Aoukicha** GitHub: [@mohaaoukicha-lgtm](https://github.com/mohaaoukicha-lgtm)
+**Mohammed Taleb** GitHub: [@MOHAMMEDTALEB20](https://github.com/MOHAMMEDTALEB20)
